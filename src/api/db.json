@@ -1,22 +1,29 @@
 {
     "guajolotas": [
-      { "id": 1, "name": "Verde", "price": 25 },
-      { "id": 2, "name": "Mole", "price": 25 },
-      { "id": 3, "name": "Guayaba", "price": 25 },
-      { "id": 4, "name": "Piña", "price": 25 },
-      { "id": 5, "name": "Pasas", "price": 25 }
+      { "id": 1, "name": "Verde", "price": 25, "url": "https://i.ibb.co/wBXjN1R/G-VERDE.png"},
+      { "id": 2, "name": "Mole", "price": 25 , "url": "https://i.ibb.co/SPGMd8H/G-MOLE.png"},
+      { "id": 3, "name": "Guayaba", "price": 25 , "url": "https://i.ibb.co/3CQwgQx/G-GUAYABA.png"},
+      { "id": 4, "name": "Piña", "price": 25 , "url": "https://i.ibb.co/kVnBCLP/G-PI-A.png"},
+      { "id": 5, "name": "Pasas", "price": 25 , "url": "https://i.ibb.co/5jJNr4w/TD-PASAS.png"}
     ],
     "bebidas": [
-      { "id": 1, "name": "Champurrado", "price": 12 },
-      { "id": 2, "name": "Atole de Arroz", "price": 12 },
-      { "id": 3, "name": "Chocolate caliente", "price": 12 },
-      { "id": 4, "name": "Café negro", "price": 12 }
+      { "id": 1, "name": "Champurrado", "price": 12 , "url": "https://i.ibb.co/crwcqdR/B-CHAMPURRADO.png"},
+      { "id": 2, "name": "Atole de Arroz", "price": 12 , "url": "https://i.ibb.co/3dBQBsT/B-ARROZ-CON-LECHE.png"},
+      { "id": 3, "name": "Chocolate caliente", "price": 12 , "url": "https://i.ibb.co/QYSzsq2/B-CHOCOLATE.png"},
+      { "id": 4, "name": "Café negro", "price": 12 , "url": "https://i.ibb.co/GpTM871/B-CAFE.png"}
     ],
     "tamales": [
-      { "id": 1, "name": "Tamal Verde", "price": 14 },
-      { "id": 2, "name": "Tamal de Mole", "price": 14 },
-      { "id": 3, "name": "Tamal de Guayaba", "price": 14 },
-      { "id": 4, "name": "Tamal de Piña", "price": 14 },
-      { "id": 5, "name": "Tamal de Pasas", "price": 14 }
-    ]
+      { "id": 1, "name": "Tamal Verde", "price": 14 , "url": "https://i.ibb.co/G38wDHz/T-VERDE.png"},
+      { "id": 2, "name": "Tamal de Mole", "price": 14 , "url": "https://i.ibb.co/4NL6CMD/T-MOLE.png"},
+      { "id": 3, "name": "Tamal de Guayaba", "price": 14 , "url": "https://i.ibb.co/cJN9bqF/TD-GUAYABA.png"},
+      { "id": 4, "name": "Tamal de Piña", "price": 14 , "url": "https://i.ibb.co/ph0vdt4/TD-PI-A.png"},
+      { "id": 5, "name": "Tamal de Pasas", "price": 14 , "url": "https://i.ibb.co/5jJNr4w/TD-PASAS.png"}
+    ],
+    "sabores": [
+      { "id": 1, "name": "Verde", "url": "https://i.ibb.co/Jst73mH/verde.png"},
+      { "id": 2, "name": "Mole", "url": "https://i.ibb.co/0sFNBc3/mole.png"},
+      { "id": 3, "name": "Guayaba", "url": "https://i.ibb.co/W5rKv2R/guayaba.png"},
+      { "id": 4, "name": "Piña", "url": "https://i.ibb.co/wdNpqgT/pi-a.png"},
+      { "id": 5, "name": "Pasas", "url": "https://i.ibb.co/NmSfMgf/pasas.png"},
+      { "id": 6, "name": "Rajas", "url": "https://i.ibb.co/qm27NrB/rajas.png"}
   }
