@@ -3,17 +3,14 @@ import { AppContext } from '../context/AppContext';
 
 const Home = () => {
 
-    const { getResources, resources } = useContext(AppContext)
+    const { resources } = useContext(AppContext)
     
-    const verde = resources?.url;
-  
-    useEffect(() => {
-        getResources("guajolotas",1)
-  }, [])
+    const guajolotaVerde = resources.data.guajolotas[0];
+
     return (
         <>
         <h1>I'm at Home</h1>
-        <img src={verde}/>
+        <img src={guajolotaVerde.url}/>
         </>
     );
 }
