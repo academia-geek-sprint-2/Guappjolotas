@@ -1,7 +1,9 @@
 import { Auth, Home, OrderDetail, UpdateOrder, OrdersCart } from "./pages";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
+
 function App() {
+
   return (
     <Router>
       <Switch>
