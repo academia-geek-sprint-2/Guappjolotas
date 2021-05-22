@@ -24,6 +24,8 @@ const AppState = ({children}) => {
             loading: false
         })
     }
+    const [food, setfood] = useState("guajolotas");
+    const [id, setId] = useState(0) 
 
     useEffect(() => {
         getResources()
@@ -32,12 +34,15 @@ const AppState = ({children}) => {
     return(
         <AppContext.Provider value={{
             resources,
-            getResources
+            food,
+            setfood,
+            id, 
+            setId
         }}>
             { children}
         </AppContext.Provider>
     )
-    
+
 }
 
 export const AppContext = createContext();
