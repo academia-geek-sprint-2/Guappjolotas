@@ -26,24 +26,22 @@ const Home = ({ history }) => {
         <Container className="container">
             <Header />
             <SearchInput />
-            <VStack
-                      spacing={4}
-                      align="stretch"
-                    >
+
                         {data[food].map(e => (
-                            <div>
+                                        <VStack
+                                        spacing={4}
+                                        align="stretch">
                             <Image
                               onClick={handleId}
                               boxSize="100px" 
                               src={e.url} 
                               index={e.id}
                             />
-                            {e.name}
-                            {e.price}
-                            </div>
+                            <span>{e.name}</span>
+                            <span>{e.price}</span>
+                            </VStack>
                         ))}
                         
-                    </VStack>
         </Container>
     );
 }
