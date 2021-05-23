@@ -18,18 +18,18 @@ class ProductFV extends Component {
 
                 {Producto.map((item) => {
                     return (
-                        <Container>
+                        <Box>
 
                             <div className="productos">
 
                                  <Box bg="FFFFFF" w="312" h="112">
-                               Productos
+                              
                                  </Box>
 
 
                             </div>
 
-                        </Container>
+                        </Box>
                     )
                 })
                 }

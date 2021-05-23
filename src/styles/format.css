@@ -25,6 +25,7 @@
     }
 
 .inputSearch{
+    background: #E7E7E7;
         margin-left:auto;
         margin-right:auto;
         width: 312px;
@@ -33,3 +34,4 @@
         border:none;
         text-indent: 3em;
         }
+
