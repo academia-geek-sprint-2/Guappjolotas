@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/academia-geek-sprint-2/Guappjolotas/static/css/main.5f473dda.chunk.css",
-    "main.js": "/academia-geek-sprint-2/Guappjolotas/static/js/main.bbaf69d5.chunk.js",
-    "main.js.map": "/academia-geek-sprint-2/Guappjolotas/static/js/main.bbaf69d5.chunk.js.map",
+    "main.js": "/academia-geek-sprint-2/Guappjolotas/static/js/main.b307856e.chunk.js",
+    "main.js.map": "/academia-geek-sprint-2/Guappjolotas/static/js/main.b307856e.chunk.js.map",
     "runtime-main.js": "/academia-geek-sprint-2/Guappjolotas/static/js/runtime-main.2759b5c7.js",
     "runtime-main.js.map": "/academia-geek-sprint-2/Guappjolotas/static/js/runtime-main.2759b5c7.js.map",
-    "static/js/2.e336224a.chunk.js": "/academia-geek-sprint-2/Guappjolotas/static/js/2.e336224a.chunk.js",
-    "static/js/2.e336224a.chunk.js.map": "/academia-geek-sprint-2/Guappjolotas/static/js/2.e336224a.chunk.js.map",
+    "static/js/2.7fb16331.chunk.js": "/academia-geek-sprint-2/Guappjolotas/static/js/2.7fb16331.chunk.js",
+    "static/js/2.7fb16331.chunk.js.map": "/academia-geek-sprint-2/Guappjolotas/static/js/2.7fb16331.chunk.js.map",
     "index.html": "/academia-geek-sprint-2/Guappjolotas/index.html",
     "static/css/main.5f473dda.chunk.css.map": "/academia-geek-sprint-2/Guappjolotas/static/css/main.5f473dda.chunk.css.map",
-    "static/js/2.e336224a.chunk.js.LICENSE.txt": "/academia-geek-sprint-2/Guappjolotas/static/js/2.e336224a.chunk.js.LICENSE.txt"
+    "static/js/2.7fb16331.chunk.js.LICENSE.txt": "/academia-geek-sprint-2/Guappjolotas/static/js/2.7fb16331.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2759b5c7.js",
-    "static/js/2.e336224a.chunk.js",
+    "static/js/2.7fb16331.chunk.js",
     "static/css/main.5f473dda.chunk.css",
-    "static/js/main.bbaf69d5.chunk.js"
+    "static/js/main.b307856e.chunk.js"
   ]
 }
