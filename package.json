@@ -30,6 +30,16 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/academia-geek-sprint-2/Guappjolotas.git"
+  },
+  "author": "Team team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/academia-geek-sprint-2/Guappjolotas/issues"
+  },
+  "homepage": "https://github.com/academia-geek-sprint-2/Guappjolotas",
   "eslintConfig": {
     "extends": [
       "react-app",
