@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState} from 'react';
 import { AppContext } from '../context/AppContext';
 import Header from '../components/HeaderFV';
 import SearchInput from '../components/searchFV'
@@ -11,12 +11,16 @@ import { Box } from '@chakra-ui/layout';
 import { Text } from '@chakra-ui/layout';
 import { Flex } from '@chakra-ui/layout';
 import { VStack } from '@chakra-ui/layout';
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
+import { Tabs, Tab, Modal, Row, Button, Col, Form, Card } from "react-bootstrap";
+import Producto from '../components/ProductFV'
 
 const Home = ({ history }) => {
 
-    const { resources, food, setfood, id, setId } = useContext(AppContext)
-
+    const { resources } = useContext(AppContext)
+    const [food, setfood] = useState("bebidas");
+    const [food1, setfood1] = useState("guajolotas");
+    const [food2, setfood2] = useState("tamales");
+    const [id, setId] = useState(0)
     const { data } = resources;
 
     const handleId = e => {
@@ -30,67 +34,34 @@ const Home = ({ history }) => {
         <Container className="container">
             <Header />
             <SearchInput />
-
-
-            
-                <Tabs variant="unstyled">
-                    <TabList>
-                        <Tab
-                            _selected={{
-                                color: "white",
-                                bg: "blue.500",
-                                borderBottom: "2px solid",
-                                borderBottomColor: "tomato",
-                            }}
-                        >
-                            Tab 1
-                        </Tab>
-                        <Tab _selected={{ color: "white", bg: "green.400" }}>Tab 2</Tab>
-                    </TabList>
-                    <TabPanels>
-                        <TabPanel>
-                            <p>one!</p>
-                        </TabPanel>
-                        <TabPanel>
-                            <p>two!</p>
-                        </TabPanel>
-                    </TabPanels>
-                </Tabs>;
-           
-
-
-            <Container mt="72px">
-                {data[food].map(e => (
-
-                    <Box weight="312" height="112" background="#ffffff" borderRadius="20px" mr="24px" ml="24" mt="10px">
-                        <HStack
-                            spacing={4}
-                        >
-                            <Image
-                                onClick={handleId}
-                                boxSize="100px"
-                                src={e.url}
-                                index={e.id}
-                            />
-
-                            <VStack >
-
-                                <Text color="black" mb="0">
-                                    <span>{e.name}</span>
-                                </Text>
-
-                                <Text color="#FA4A0C">
-                                    <span> $ {e.price} MXN</span>
-                                </Text>
-                            </VStack>
-
-
-                        </HStack>
-                    </Box>
-
-                ))}
-
+            <Container  mt="40px"  >
+                <Row>
+                    <Col>
+                        <Tabs defaultActiveKey="Guajalotas" 
+                             >
+                            <Tab eventKey="Guajalotas" title="Guajalotas" className="botones">
+                            {data[food1].map((e) => (
+                        <Producto datos={[e]} />))}
+                            </Tab>
+                            <Tab eventKey="Bebidas" title="Bebidas"className="botones">
+                            {data[food].map((e) => (
+                        <Producto datos={[e]} />))}
+                                
+                            </Tab>
+                            <Tab eventKey="Tamales" title="Tamales" className="botones" >
+                            {data[food2].map((e) => (
+                        <Producto datos={[e]} />))}
+                                
+                            </Tab>
+                        </Tabs>
+                    </Col>
+                </Row>
             </Container>
+
+
+
+
+
 
 
         </Container>

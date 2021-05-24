@@ -24,24 +24,20 @@ const AppState = ({children}) => {
             loading: false
         })
     }
-    const [food, setfood] = useState("guajolotas");
-    const [id, setId] = useState(0) 
 
     useEffect(() => {
         getResources()
   }, [])
 
-    return(
-        <AppContext.Provider value={{
-            resources,
-            food,
-            setfood,
-            id, 
-            setId
-        }}>
-            { children}
-        </AppContext.Provider>
-    )
+  return(
+    <AppContext.Provider value={{
+        resources,
+        getResources
+    }}>
+        { children}
+    </AppContext.Provider>
+)
+
 
 }
 
