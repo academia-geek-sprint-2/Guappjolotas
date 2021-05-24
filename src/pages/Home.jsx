@@ -34,14 +34,14 @@ const Home = ({ history }) => {
         <Container className="container">
             <Header />
             <SearchInput />
-            <Container  mt="40px"  >
+            <Container  mt="40px" >
                 <Row>
                     <Col>
                         <Tabs defaultActiveKey="Guajalotas" 
                              >
                             <Tab eventKey="Guajalotas" title="Guajalotas" className="botones">
-                            {data[food1].map((e) => (
-                        <Producto datos={[e]} />))}
+                            <div onClick={handleId}>{data[food1].map((e) => (
+                        <Producto datos={[e]} />))}</div>
                             </Tab>
                             <Tab eventKey="Bebidas" title="Bebidas"className="botones">
                             {data[food].map((e) => (
